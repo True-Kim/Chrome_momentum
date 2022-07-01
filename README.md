@@ -2,7 +2,7 @@
 for Javascript for Beginners
 
 - 강의 링크 : https://nomadcoders.co/javascript-for-beginners
-- 페이지 링크 : https://true-kim.github.io/hrome_momentum/
+- 페이지 링크 : https://true-kim.github.io/Chrome_momentum/
 
 ## 주요기능
 - Browser Local Storage사용
