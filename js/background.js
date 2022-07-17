@@ -1,7 +1,24 @@
-const images = ["1.jpg", "2.jpg", "3.jpg"]
+const bgColor = document.querySelector("div#back-color")
+const bgImage = document.querySelector("img#bgImage");
+const images = ["Gryffindor.jpg", "Huffulpuff.jpg", "Ravenclaw.jpg", "Slyderin.jpg"]
 const chosenImage = images[Math.floor(Math.random() * images.length)];
-const bgImage = document.createElement("img"); // js에서 html element를 만듦.
+const DORM_KEY = "dormitory"
 
-bgImage.src = `img/${chosenImage}`;
+bgImage.src = `img/pc/${chosenImage}`;
+// bgImage.src = `img/m/${chosenImage}`;
 
-document.body.appendChild(bgImage) // body안에 element를 보냄.
+function setDormitory(){
+    if (chosenImage === "Gryffindor.jpg"){
+        const dorm = "Gryffindor" 
+        localStorage.setItem(DORM_KEY, dorm);
+    } else if (chosenImage === "Huffulpuff.jpg"){
+        const dorm = "Huffulpuff"
+        localStorage.setItem(DORM_KEY, dorm);
+    } else if (chosenImage === "Ravenclaw.jpg"){
+        const dorm = "Ravenclaw"
+        localStorage.setItem(DORM_KEY, dorm);
+    } else {
+        const dorm = "Slyderin"
+        localStorage.setItem(DORM_KEY, dorm);
+    }
+}

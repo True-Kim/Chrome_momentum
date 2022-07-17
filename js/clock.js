@@ -8,7 +8,11 @@ function getClock(){
     clock.innerText = `${hours}:${minutes}:${seconds}`;
 }
 
-//setInterval(sayHello, 5000); // 매 초마다 실행
-//setTimeout(sayHello, 5000); // 표시까지 기다릴 시간
 getClock();
 setInterval(getClock, 1000);
+
+if(savedUsername === null){
+    clock.classList.add(HIDDEN_CLASSNAME)
+} else {
+    clock.classList.remove(HIDDEN_CLASSNAME)
+}
