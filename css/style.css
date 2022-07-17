@@ -79,7 +79,6 @@ h2#clock{
 h1#greeting{
     font-family: 'Harry Potter', sans-serif;          
     color:beige;
-    letter-spacing: 1px;
 }
 
 #todo-form input{
