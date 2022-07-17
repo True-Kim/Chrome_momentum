@@ -6,7 +6,7 @@ const DORM_KEY = "dormitory"
 
 if (matchMedia("screen and (min-width:760px").matches){
     bgImage.src = `img/pc/${chosenImage}`;
-}else if (matchMedia("screen and (max-width:760px").matches){
+} else{
     bgImage.src = `img/m/${chosenImage}`;
 }
 
