@@ -4,8 +4,11 @@ const images = ["Gryffindor.jpg", "Huffulpuff.jpg", "Ravenclaw.jpg", "Slyderin.j
 const chosenImage = images[Math.floor(Math.random() * images.length)];
 const DORM_KEY = "dormitory"
 
-bgImage.src = `img/pc/${chosenImage}`;
-// bgImage.src = `img/m/${chosenImage}`;
+if (matchMedia("screen and (min-width:760px").matches){
+    bgImage.src = `img/pc/${chosenImage}`;
+}else if (matchMedia("screen and (max-width:760px").matches){
+    bgImage.src = `img/m/${chosenImage}`;
+}
 
 function setDormitory(){
     if (chosenImage === "Gryffindor.jpg"){
