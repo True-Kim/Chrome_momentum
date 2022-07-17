@@ -22,7 +22,7 @@ function onLoginSubmit(event){
 function paintGreetings(username, dormitory){
     RemoveIcon();
     dormitory = localStorage.getItem(DORM_KEY);
-    greeting.innerText = `${username} Welcome to ${dormitory}`;
+    greeting.innerText = `${username}, Welcome to ${dormitory}`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
     bgImage.classList.remove(HIDDEN_CLASSNAME);
     clock.classList.remove(HIDDEN_CLASSNAME);
